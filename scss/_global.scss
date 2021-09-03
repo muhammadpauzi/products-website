@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontFamilySansSerif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: $backgroundColor;
+    color: $textColor;
+    position: relative;
+}
+
+// RESET
+
+a, a:visited{
+    display: block;
+    text-decoration: none;
+    color: $textColor;
+}
+
+li{
+    list-style: none;
+}
+
+span{
+    display: block;
+}
+
+// UTILITIES
+
+.container{
+    width: 1000px;
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.wrapper{
+    padding-top: 1rem;
+}
+
+.devider{
+    display: block;
+    height: 1px;
+    background-color: $grayColor;
+    border: none;
+    margin: .200rem 0 1rem 0;
+    width: 20px;
+    
+    &.full{
+        width: 100%;
+    }
+}
+
+.error{
+    color: $dangerColor;
+    text-align: center;
+    padding: 2rem 0;
+    font-weight: $fontWeightBold;
+}
+
+// MARGIN & PADDING
+.py-1{
+    padding-top: .500rem !important;
+    padding-bottom: .500rem !important;
+}
+
+.px-2{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.mr-1{
+    margin-right: .500rem !important;
+}
+
+.mb-2{
+    margin-bottom: 1rem !important;
+}
+
+.mb-3{
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-7{
+    margin-bottom: 3.5rem !important;
+}
+
+.mt-2{
+    margin-top: 1rem !important;
+}
+
+.mx-auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// DISPLAY
+.d-none{
+    display: none !important;
+}
+
+// FLEX
+
+.flex{
+    display: flex !important;
+}
+
+.ai-c{
+    align-items: center !important;
+}
+
+.jc-c{
+    justify-content: center !important;
+}
+
+.jc-sb{
+    justify-content: space-between !important;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.gap-1{
+    gap: .5rem;
+}
+
+// INPUTS
+
+.input{
+    display: block;
+    width: 100%;
+    padding: .900rem .600rem;
+    font-weight: $fontWeightBold;
+    font-size: .900em;
+    outline: none;
+    border: 1px solid $grayColor;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+}
+
+.input-group{
+    display: block;
+    margin-bottom: .800rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: .900rem 1.8rem;
+    user-select: none;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    font-weight: $fontWeightBold;
+    font-size: .900em;
+    color: $whiteColor;
+    outline: none;
+    appearance: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-black{
+    background-color: $blackColor;
+    color: $whiteColor !important;
+    transition: background-color .3s;
+
+    &:hover{
+        background-color: darken($blackColor, 4);
+    }
+}
+
+.btn-outline-black{
+    border: 2px solid $blackColor;
+    background-color: transparent;
+    color: $blackColor !important;
+    transition: background-color .3s;
+
+    &:hover{
+        background-color: rgba($blackColor, .05);
+    }
+}
+
+// HEADINGS
+
+.title, .title-md{
+    font-family: $fontFamilySerif;
+    margin-bottom: 1rem;
+    font-weight: $fontWeightBolder;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.title-md{
+    font-size: 2rem;
+}
+
+@media (max-width: $small){
+    .title{
+        font-size: 2.3rem;
+    }
+
+    .title-md{
+        font-size: 1.5rem;
+    }
+}
+
+
+// TEXTS
+
+.text-center{
+    text-align: center !important;
+}
+
+.text-gray{
+    color: $grayColor;
+}
+
+// CARD
+
+.card{
+    width: 100%;
+
+    .card-image{
+        width: 100%;
+        overflow-y: hidden;
+
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .card-content{
+        padding: 1.4rem 1rem;
+
+        .card-title{
+            font-size: 1rem;
+            color: $blackColor;
+            font-weight: $fontWeightBolder;
+            margin-bottom: .6rem;
+        }
+        
+        .card-price{
+            color: $grayColor;
+            font-size: 1.1rem;
+            font-weight: $fontWeightBold;
+            margin-bottom: 1rem;
+        }
+
+        .card-button-group{
+            display: grid;
+            grid-template-columns: 1fr .5fr;
+            text-align: center;
+            gap: .2rem;
+
+            .btn{
+                padding: .7rem .1rem;
+                font-size: .700rem;
+            }
+        }
+    }
+}
