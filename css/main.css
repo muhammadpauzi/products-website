@@ -238,7 +238,7 @@ span {
 }
 
 .card .card-content {
-  padding: 1.4rem 1rem;
+  padding: 1.4rem 0;
 }
 
 .card .card-content .card-title {
