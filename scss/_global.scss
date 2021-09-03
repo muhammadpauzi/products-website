@@ -244,11 +244,12 @@ span{
             color: $blackColor;
             font-weight: $fontWeightBolder;
             margin-bottom: .6rem;
+            font-family: $fontFamilySerif;
         }
         
         .card-price{
             color: $grayColor;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: $fontWeightBold;
             margin-bottom: 1rem;
         }

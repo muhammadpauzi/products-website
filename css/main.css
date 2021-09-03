@@ -246,11 +246,12 @@ span {
   color: #000;
   font-weight: 800;
   margin-bottom: .6rem;
+  font-family: "Merriweather", serif;
 }
 
 .card .card-content .card-price {
   color: #484848;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
