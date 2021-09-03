@@ -27,6 +27,10 @@ span {
   display: block;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1000px;
   max-width: 100%;
@@ -237,7 +241,6 @@ span {
 
 .card .card-image img {
   width: 100%;
-  display: block;
 }
 
 .card .card-content {
@@ -300,6 +303,14 @@ span {
   color: #000;
 }
 
+.navbar .ham-menu {
+  display: none;
+}
+
+.navbar .ham-menu img {
+  cursor: pointer;
+}
+
 .hero {
   max-width: 700px;
   margin: auto;
@@ -345,6 +356,33 @@ span {
 }
 
 @media screen and (max-width: 600px) {
+  .navbar .navbar-list {
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    background-color: #FFF;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    visibility: hidden;
+    border-bottom: 2px solid #DBDBDB;
+    padding: 1rem 0 2rem 0;
+  }
+  .navbar .navbar-list .navbar-link {
+    padding: 1rem;
+    text-align: center;
+  }
+  .navbar .navbar-list.active {
+    visibility: visible;
+  }
+  .navbar .ham-menu {
+    display: block;
+  }
   .search-group {
     display: block;
   }

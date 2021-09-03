@@ -25,6 +25,14 @@
             color: $blackColor;
         }
     }
+
+    .ham-menu{
+        display: none;
+
+        img{
+            cursor: pointer;
+        }
+    }
 }
 
 .hero{
@@ -67,6 +75,34 @@
 }
 
 @media screen and (max-width: $small){
+    .navbar{
+        .navbar-list{
+            width: 100%;
+            position: absolute;
+            top: 4rem;
+            left: 0;
+            background-color: #FFF;
+            flex-direction: column;
+            justify-content: center;
+            visibility: hidden;
+            border-bottom: 2px solid $grayColor3;
+            padding: 1rem 0 2rem 0;
+
+            .navbar-link{
+                padding: 1rem;
+                text-align: center;
+            }
+        }
+
+        .navbar-list.active{
+            visibility: visible;
+        }
+
+        .ham-menu{
+            display: block;
+        }
+    }
+
     .search-group{
         display: block;
 
