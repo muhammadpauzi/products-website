@@ -133,11 +133,11 @@ span{
 .input{
     display: block;
     width: 100%;
-    padding: .900rem .600rem;
+    padding: .900rem 1em;
     font-weight: $fontWeightBold;
-    font-size: .900em;
+    font-size: 1rem;
     outline: none;
-    border: 1px solid $grayColor;
+    border: 1px solid $grayColor3;
     background-color: #FAFAFA;
     border-radius: 3px;
 }

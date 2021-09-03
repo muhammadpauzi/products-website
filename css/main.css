@@ -134,11 +134,11 @@ span {
 .input {
   display: block;
   width: 100%;
-  padding: .900rem .600rem;
+  padding: .900rem 1em;
   font-weight: 700;
-  font-size: .900em;
+  font-size: 1rem;
   outline: none;
-  border: 1px solid #484848;
+  border: 1px solid #DBDBDB;
   background-color: #FAFAFA;
   border-radius: 3px;
 }
@@ -307,7 +307,7 @@ span {
 }
 
 .popular-products {
-  padding: 4rem 0 10rem 0;
+  padding: 4rem 0 5rem 0;
 }
 
 .grid-product {
@@ -315,6 +315,14 @@ span {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: .5rem;
+}
+
+.search-group {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: .5rem;
 }
 
@@ -337,6 +345,15 @@ span {
 }
 
 @media screen and (max-width: 600px) {
+  .search-group {
+    display: block;
+  }
+  .search-group .input {
+    margin-bottom: .5rem;
+  }
+  .search-group .btn {
+    width: 100%;
+  }
   .grid-product {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;

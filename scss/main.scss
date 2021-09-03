@@ -34,7 +34,7 @@
 }
 
 .popular-products{
-    padding: 4rem 0 10rem 0;
+    padding: 4rem 0 5rem 0;
 }
 
 .grid-product{
@@ -43,7 +43,11 @@
     gap: .5rem;
 }
 
-
+.search-group{
+    margin-bottom: 2rem;
+    display: flex;
+    gap: .5rem;
+}
 
 .footer{
     padding: 2rem 0;
@@ -63,6 +67,18 @@
 }
 
 @media screen and (max-width: $small){
+    .search-group{
+        display: block;
+
+        .input{
+            margin-bottom: .5rem;
+        }
+    
+        .btn{
+            width: 100%;
+        }
+    }
+
     .grid-product{
         grid-template-columns: 1fr 1fr;
     }
