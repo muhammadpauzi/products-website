@@ -151,6 +151,8 @@ span{
     display: inline-block;
     padding: .900rem 1.8rem;
     user-select: none;
+    border-width: 2px !important;
+    border-style: solid !important;
     text-transform: uppercase;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
@@ -166,6 +168,7 @@ span{
 .btn-black{
     background-color: $blackColor;
     color: $whiteColor !important;
+    border-color: $blackColor;
     transition: background-color .3s;
 
     &:hover{
@@ -174,7 +177,7 @@ span{
 }
 
 .btn-outline-black{
-    border: 2px solid $blackColor;
+    border-color: $blackColor;
     background-color: transparent;
     color: $blackColor !important;
     transition: background-color .3s;
