@@ -58,6 +58,18 @@ img{
     }
 }
 
+.button-group{
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    text-align: center;
+    gap: .2rem;
+
+    .btn{
+        padding: .7rem .1rem;
+        font-size: .700rem;
+    }
+}
+
 .error{
     color: $dangerColor;
     text-align: center;
@@ -258,18 +270,6 @@ img{
             font-size: 1rem;
             font-weight: $fontWeightBold;
             margin-bottom: 1rem;
-        }
-
-        .card-button-group{
-            display: grid;
-            grid-template-columns: 1fr .5fr;
-            text-align: center;
-            gap: .2rem;
-
-            .btn{
-                padding: .7rem .1rem;
-                font-size: .700rem;
-            }
         }
     }
 }

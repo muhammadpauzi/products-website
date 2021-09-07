@@ -68,6 +68,37 @@
     }
 }
 
+.product-detail{
+    padding: 2rem 0 9rem 0;
+    min-height: 100vh;
+
+    .grid-product-detail{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        .content-product-detail{
+            padding-left: 2rem;
+
+            .price-product-detail{
+                font-size: 1.2rem;
+                font-weight: $fontWeightBolder;
+                margin-bottom: 1rem;
+                color: $grayColor;
+            }
+
+            .description-product-detail{
+                color: $grayColor;
+                margin-bottom: 2rem;
+
+                p{
+                    margin-bottom: .5rem;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: $medium){
     .grid-product{
         grid-template-columns: 1fr 1fr 1fr;
