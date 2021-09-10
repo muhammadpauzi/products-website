@@ -108,6 +108,10 @@ img{
     margin-top: 1rem !important;
 }
 
+.mt-4{
+    margin-top: 2rem !important;
+}
+
 .mx-auto{
     margin-right: auto;
     margin-left: auto;
@@ -161,6 +165,12 @@ img{
 .input-group{
     display: block;
     margin-bottom: .800rem;
+
+    label{
+        margin-bottom: .5rem;
+        display: block;
+        font-weight: $fontWeightMedium;
+    }
 }
 
 .btn{
@@ -200,6 +210,19 @@ img{
 
     &:hover{
         background-color: rgba($blackColor, .05);
+    }
+}
+
+.btn-full{
+    width: 100%;
+}
+
+// LINKS
+.link-black{
+    color: $blackColor;
+
+    &:hover{
+        text-decoration: underline;
     }
 }
 

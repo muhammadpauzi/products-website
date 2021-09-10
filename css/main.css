@@ -106,6 +106,10 @@ img {
   margin-top: 1rem !important;
 }
 
+.mt-4 {
+  margin-top: 2rem !important;
+}
+
 .mx-auto {
   margin-right: auto;
   margin-left: auto;
@@ -166,6 +170,12 @@ img {
   margin-bottom: .800rem;
 }
 
+.input-group label {
+  margin-bottom: .5rem;
+  display: block;
+  font-weight: 600;
+}
+
 .btn {
   display: inline-block;
   padding: .900rem 1.8rem;
@@ -211,6 +221,18 @@ img {
 
 .btn-outline-black:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.link-black {
+  color: #000;
+}
+
+.link-black:hover {
+  text-decoration: underline;
 }
 
 .title, .title-md {
@@ -295,8 +317,12 @@ img {
   font-weight: 600;
   color: #7b7b7b;
   font-size: 1rem;
-  -webkit-transition: color .3s;
-  transition: color .3s;
+  -webkit-transition: background-color .3s, color .3s;
+  transition: background-color .3s, color .3s;
+}
+
+.navbar .navbar-link.btn {
+  margin-right: .3rem;
 }
 
 .navbar .navbar-link:hover {
@@ -393,6 +419,19 @@ img {
   font-size: .9rem;
 }
 
+.login {
+  padding: 1rem 0 2rem 0;
+  min-height: 100vh;
+}
+
+.login .login-card {
+  max-width: 450px;
+  border-bottom: 1px solid #DBDBDB;
+  border-radius: 4px;
+  padding: 2rem 2rem;
+  margin: 2rem auto;
+}
+
 @media screen and (max-width: 900px) {
   .product-detail .grid-product-detail {
     -ms-grid-columns: 1.2fr 2fr;
@@ -434,11 +473,13 @@ img {
             justify-content: center;
     visibility: hidden;
     border-bottom: 2px solid #DBDBDB;
-    padding: 1rem 0 2rem 0;
+    padding: 1rem 2rem 2rem 2rem;
   }
   .navbar .navbar-list .navbar-link {
+    width: 100%;
     padding: 1rem;
     text-align: center;
+    margin-bottom: .5rem;
   }
   .navbar .navbar-list.active {
     visibility: visible;

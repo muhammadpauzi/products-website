@@ -19,8 +19,12 @@
         font-weight: $fontWeightMedium;
         color: lighten($grayColor, 20);
         font-size: 1rem;
-        transition: color .3s;
-        
+        transition: background-color .3s, color .3s;
+
+        &.btn{
+            margin-right: .3rem;
+        }
+
         &:hover{
             color: $blackColor;
         }
@@ -113,6 +117,19 @@
     }
 }
 
+.login{
+    padding: 1rem 0 2rem 0;
+    min-height: 100vh;
+}
+
+.login .login-card{
+    max-width: 450px;
+    border-bottom: 1px solid $grayColor3;
+    border-radius: 4px;
+    padding: 2rem 2rem;
+    margin: 2rem auto;
+}
+
 @media screen and (max-width: 900px){
     .product-detail .grid-product-detail{
         grid-template-columns: 1.2fr 2fr;
@@ -150,11 +167,13 @@
             justify-content: center;
             visibility: hidden;
             border-bottom: 2px solid $grayColor3;
-            padding: 1rem 0 2rem 0;
+            padding: 1rem 2rem 2rem 2rem;
 
             .navbar-link{
+                width: 100%;
                 padding: 1rem;
                 text-align: center;
+                margin-bottom: .5rem;
             }
         }
 
