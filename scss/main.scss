@@ -94,7 +94,7 @@
 
             .description-product-detail{
                 color: $grayColor;
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
 
                 p{
                     margin-bottom: .5rem;
@@ -102,12 +102,17 @@
                 }
             }
 
-            .btn{
-                font-size: .9rem;
+            .button-group{
+                margin-bottom: 2rem;
+
+                .btn{
+                    font-size: .9rem;
+                }
             }
         }
     }
 }
+
 @media screen and (max-width: 900px){
     .product-detail .grid-product-detail{
         grid-template-columns: 1.2fr 2fr;

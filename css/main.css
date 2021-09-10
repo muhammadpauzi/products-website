@@ -377,7 +377,7 @@ img {
 
 .product-detail .grid-product-detail .content-product-detail .description-product-detail {
   color: #484848;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .product-detail .grid-product-detail .content-product-detail .description-product-detail p {
@@ -385,7 +385,11 @@ img {
   line-height: 25px;
 }
 
-.product-detail .grid-product-detail .content-product-detail .btn {
+.product-detail .grid-product-detail .content-product-detail .button-group {
+  margin-bottom: 2rem;
+}
+
+.product-detail .grid-product-detail .content-product-detail .button-group .btn {
   font-size: .9rem;
 }
 
