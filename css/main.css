@@ -250,7 +250,7 @@ img {
   padding: 5rem 0 6rem 0;
 }
 
-.popular-products {
+.products {
   padding: 4rem 0 5rem 0;
 }
 
@@ -285,16 +285,16 @@ img {
 
 .product-detail .name-product-detail {
   margin-bottom: 1rem;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #484848;
-  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #000;
+  font-family: "Merriweather", serif;
   text-transform: uppercase;
   line-height: 24px;
 }
 
 .product-detail .price-product-detail {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 800;
   margin-bottom: 1.2rem;
   color: #000;
@@ -302,7 +302,7 @@ img {
 
 .product-detail .description-product-detail {
   color: #484848;
-  font-size: .9rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 

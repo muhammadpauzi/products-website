@@ -46,7 +46,7 @@
     padding: 5rem 0 6rem 0;
 }
 
-.popular-products{
+.products{
     padding: 4rem 0 5rem 0;
 }
 
@@ -80,24 +80,24 @@
 
     .name-product-detail{
         margin-bottom: 1rem;
-        font-weight: $fontWeightBold;
-        font-size: 1.5rem;
-        color: $grayColor;
-        font-family: $fontFamilySansSerif;
+        font-weight: $fontWeightMedium;
+        font-size: 1.4rem;
+        color: $blackColor;
+        font-family: $fontFamilySerif;
         text-transform: uppercase;
         line-height: 24px;
     }
 
     .price-product-detail{
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: $fontWeightBolder;
         margin-bottom: 1.2rem;
-        color: $blackColor
+        color: $blackColor;
     }
 
     .description-product-detail{
         color: $grayColor;
-        font-size: .9rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
 
         p{
