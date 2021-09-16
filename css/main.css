@@ -194,7 +194,7 @@ p {
 }
 
 @media (max-width: 600px) {
-  .title {
+  .title-lg {
     font-size: 2.3rem;
   }
   .title-md {
@@ -409,7 +409,6 @@ p {
 .login .login-card {
   max-width: 450px;
   border-bottom: 1px solid #DBDBDB;
-  border-radius: 4px;
   padding: 2rem 0;
   margin: 2rem auto;
 }
