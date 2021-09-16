@@ -128,14 +128,6 @@
             line-height: 25px;
         }
     }
-
-    .button-group{
-        margin-bottom: 2rem;
-
-        .btn{
-            font-size: .9rem;
-        }
-    }
 }
 
 .login{
@@ -185,6 +177,17 @@
 
         .ham-menu{
             display: flex;
+        }
+    }
+
+    .product-detail{
+    
+        .name-product-detail{
+            font-size: 1.2rem;
+        }
+    
+        .price-product-detail{
+            font-size: 1.1rem;
         }
     }
 

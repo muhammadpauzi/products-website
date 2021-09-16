@@ -397,14 +397,6 @@ p {
   line-height: 25px;
 }
 
-.product-detail .button-group {
-  margin-bottom: 2rem;
-}
-
-.product-detail .button-group .btn {
-  font-size: .9rem;
-}
-
 .login {
   padding: 1rem 0 2rem 0;
   min-height: 100vh;
@@ -455,6 +447,12 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .product-detail .name-product-detail {
+    font-size: 1.2rem;
+  }
+  .product-detail .price-product-detail {
+    font-size: 1.1rem;
   }
   .footer p {
     font-size: .9rem;
