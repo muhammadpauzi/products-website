@@ -317,7 +317,7 @@ p {
   border: none;
   height: 3px;
   border-radius: 10px;
-  background-color: #FFF;
+  background-color: #5444DA;
 }
 
 .hero {
@@ -415,30 +415,12 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar.sticky .navbar-list {
-    background-color: #FFF;
-    -webkit-transition-property: background-color, color, -webkit-box-shadow;
-    transition-property: background-color, color, -webkit-box-shadow;
-    transition-property: background-color, color, box-shadow;
-    transition-property: background-color, color, box-shadow, -webkit-box-shadow;
-    -webkit-transition-duration: .3s;
-            transition-duration: .3s;
-  }
-  .navbar.sticky .navbar-list .navbar-link {
-    color: #5444DA;
-  }
-  .navbar.sticky .navbar-list .navbar-link:hover {
-    color: #8e84e7;
-  }
-  .navbar.sticky .ham-menu span {
-    background-color: #5444DA !important;
-  }
   .navbar .navbar-list {
     width: 100%;
     position: absolute;
     top: 4rem;
     left: 0;
-    background-color: #5444DA;
+    background-color: #FFF;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -448,7 +430,7 @@ p {
             justify-content: center;
     visibility: hidden;
     padding: 1rem 2rem 2rem 2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(84, 68, 218, 0.1);
     -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     z-index: 99;

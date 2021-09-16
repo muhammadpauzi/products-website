@@ -54,7 +54,7 @@
             border: none;
             height: 3px;
             border-radius: 10px;
-            background-color: $whiteColor;
+            background-color: $primaryColor
         }
     }
 }
@@ -155,39 +155,17 @@
 
 @media screen and (max-width: $medium){
     .navbar{
-        &.sticky{
-            .navbar-list{
-                background-color: $whiteColor;
-                transition-property: background-color, color, box-shadow;
-                transition-duration: .3s;
-                
-                .navbar-link{
-                    color: $primaryColor;
-            
-                    &:hover{
-                        color: lighten($primaryColor, 15);
-                    }
-                }
-            }
-
-            .ham-menu{
-                span{
-                    background-color: $primaryColor !important;
-                }
-            }
-        }
-        
         .navbar-list{
             width: 100%;
             position: absolute;
             top: 4rem;
             left: 0;
-            background-color: $primaryColor;
+            background-color: $whiteColor;
             flex-direction: column;
             justify-content: center;
             visibility: hidden;
             padding: 1rem 2rem 2rem 2rem;
-            border-bottom: 1px solid rgba($whiteColor, .1);
+            border-bottom: 1px solid rgba($primaryColor, .1);
             box-shadow: 0 3px 8px rgba($blackColor, .1);
             z-index: 99;
 
