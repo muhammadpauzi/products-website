@@ -30,10 +30,10 @@
             transition-property: background-color, color, box-shadow;
             transition-duration: .3s;
             transition-timing-function: ease-out;
-            color: $primaryColor;
-        
+            color: $blackColor;
+                        
             &:hover{
-                color: lighten($primaryColor, 15);
+                color: $primaryColor;
             }
         }
     }
@@ -62,7 +62,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba($blackColor, .5);
+    background-color: rgba($blackColor, .9);
     width: 100%;
     height: 100vh;
     visibility: hidden;
@@ -208,7 +208,13 @@
                 text-transform: uppercase;
                 text-align: center;
                 margin-bottom: .5rem;
+                color: $primaryColor;
 
+                &:hover{
+                    color: lighten($primaryColor, 20);
+
+                }
+                
                 &.btn{
                     padding: .9rem 1rem;
                 }
