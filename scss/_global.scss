@@ -238,7 +238,7 @@ p{
             font-size: 1.1rem;
             font-weight: $fontWeightBolder;
             color: $primaryColor !important;
-            margin-bottom: .6rem;
+            margin-bottom: .2rem;
             font-family: $fontFamilySansSerif;
 
             &:hover{
@@ -258,5 +258,19 @@ p{
 @media screen and (max-width: $medium){
     .link-primary{
         font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: $small){
+    .card{
+        .card-content{
+            .card-title a{
+                font-size: .9rem;
+            }
+
+            .card-price{
+                font-size: .8rem;
+            }
+        }
     }
 }
