@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 Grid CSS -->
+    <link rel="stylesheet" href="./vendors/boostrap5/css/bootstrap-grid.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
 
     <title>Cramer</title>
 </head>
@@ -20,10 +22,10 @@
 <body>
 
     <nav class="navbar">
-        <div class="container flex jc-sb ai-c">
+        <div class="container d-flex justify-content-between align-items-center">
             <a href="/" class="logo">Cramer</a>
 
-            <ul class="navbar-list flex">
+            <ul class="navbar-list d-flex align-items-center">
                 <li>
                     <a href="/" class="navbar-link">Home</a>
                 </li>
@@ -48,21 +50,24 @@
     </nav>
 
     <div class="container">
-        <div class="login">
-            <div class="login-card">
-                <div class="text-center">
-                    <h2 class="title-md mb-7">Login</h2>
+        <div class="row login">
+            <div class="col-md-6 mx-auto">
+                <div class="login-card">
+                    <div class="text-center">
+                        <h2 class="title-md mb-7">Login</h2>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="input" id="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="input" id="password">
+                    </div>
+                    <button class="btn btn-black btn-full">Login</button>
+                    <a href="register.html" class="link-black mt-4 text-center">Don't have an account? register
+                        here!</a>
                 </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="text" class="input" id="email">
-                </div>
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="input" id="password">
-                </div>
-                <button class="btn btn-black btn-full">Login</button>
-                <a href="register.html" class="link-black mt-4 text-center">Don't have an account? register here!</a>
             </div>
         </div>
     </div>

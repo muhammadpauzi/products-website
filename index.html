@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 Grid CSS -->
+    <link rel="stylesheet" href="./vendors/boostrap5/css/bootstrap-grid.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
 
     <title>Cramer</title>
 </head>
@@ -20,10 +22,10 @@
 <body>
 
     <nav class="navbar">
-        <div class="container flex jc-sb ai-c">
+        <div class="container d-flex justify-content-between align-items-center">
             <a href="/" class="logo">Cramer</a>
 
-            <ul class="navbar-list flex">
+            <ul class="navbar-list d-flex align-items-center">
                 <li>
                     <a href="/" class="navbar-link">Home</a>
                 </li>
@@ -51,82 +53,128 @@
         <div class="container text-center">
             <h1 class="title">Buy The Best Products in The World.</h1>
             <p class="text-gray mb-3">Cramer is a eCommerce that selling products with cheap and quick.</p>
-            <div class="flex jc-c gap-1">
+            <div>
                 <a href="" class="btn btn-black">Products</a>
                 <a href="" class="btn btn-outline-black">Login</a>
             </div>
         </div>
     </div>
 
-    <div class="popular-products">
+    <div class="products">
         <div class="container">
             <div class="text-center">
                 <h2 class="title-md mb-7">Popular Products</h2>
+                <hr class="line mb-5">
             </div>
 
-            <div class="grid-product">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./images/1.webp" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Mi TV 4 55"</h3>
-                        <p class="card-price">Rp. 3.200.000</p>
-                        <div class="button-group">
-                            <a href="" class="btn btn-black">Add to Cart</a>
-                            <a href="" class="btn btn-outline-black">Buy</a>
+            <div class="row g-2">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/1.webp" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="product.html">Mi TV 4 55"</a></h3>
+                            <p class="card-price">Rp. 3.200.000</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./images/2.webp" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Sony Headset</h3>
-                        <p class="card-price">Rp. 320.000</p>
-                        <div class="button-group">
-                            <a href="" class="btn btn-black">Add to Cart</a>
-                            <a href="" class="btn btn-outline-black">Buy</a>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/2.webp" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="product.html">Mi TV 4 55"</a></h3>
+                            <p class="card-price">Rp. 3.200.000</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./images/3.webp" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Coocaa TV 40" FHD</h3>
-                        <p class="card-price">Rp. 2.600.000</p>
-                        <div class="button-group">
-                            <a href="" class="btn btn-black">Add to Cart</a>
-                            <a href="" class="btn btn-outline-black">Buy</a>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/3.webp" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="product.html">Mi TV 4 55"</a></h3>
+                            <p class="card-price">Rp. 3.200.000</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./images/4.webp" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Samsung TV 43" UHD 4K</h3>
-                        <p class="card-price">Rp. 5.200.000</p>
-                        <div class="button-group">
-                            <a href="" class="btn btn-black">Add to Cart</a>
-                            <a href="" class="btn btn-outline-black">Buy</a>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/4.webp" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="product.html">Mi TV 4 55"</a></h3>
+                            <p class="card-price">Rp. 3.200.000</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./images/5.webp" alt="">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/1.webp" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="product.html">Mi TV 4 55"</a></h3>
+                            <p class="card-price">Rp. 3.200.000</p>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Changhong TV 24"</h3>
-                        <p class="card-price">Rp. 1.600.000</p>
-                        <div class="button-group">
-                            <a href="" class="btn btn-black">Add to Cart</a>
-                            <a href="" class="btn btn-outline-black">Buy</a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/1.webp" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="product.html">Mi TV 4 55"</a></h3>
+                            <p class="card-price">Rp. 3.200.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/1.webp" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="product.html">Mi TV 4 55"</a></h3>
+                            <p class="card-price">Rp. 3.200.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/1.webp" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="product.html">Mi TV 4 55"</a></h3>
+                            <p class="card-price">Rp. 3.200.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/1.webp" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="product.html">Mi TV 4 55"</a></h3>
+                            <p class="card-price">Rp. 3.200.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/1.webp" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="product.html">Mi TV 4 55"</a></h3>
+                            <p class="card-price">Rp. 3.200.000</p>
                         </div>
                     </div>
                 </div>

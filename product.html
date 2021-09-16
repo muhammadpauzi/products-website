@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 Grid CSS -->
+    <link rel="stylesheet" href="./vendors/boostrap5/css/bootstrap-grid.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
 
     <title>Cramer</title>
 </head>
@@ -20,10 +22,10 @@
 <body>
 
     <nav class="navbar">
-        <div class="container flex jc-sb ai-c">
+        <div class="container d-flex justify-content-between align-items-center">
             <a href="/" class="logo">Cramer</a>
 
-            <ul class="navbar-list flex">
+            <ul class="navbar-list d-flex align-items-center">
                 <li>
                     <a href="/" class="navbar-link">Home</a>
                 </li>
@@ -50,33 +52,49 @@
     <div class="product-detail">
         <div class="container">
             <a href="/" class="btn btn-black mb-2">Back</a>
-            <div class="grid-product-detail">
-                <div class="image-product-detail">
-                    <img src="./images/4.webp" alt="">
-                </div>
-                <div class="content-product-detail">
-                    <h3 class="title-md">Samsung TV 43" UHD 4K</h3>
-                    <p class="price-product-detail">Rp. 5.200.000</p>
-                    <div class="button-group mb-4">
-                        <a href="" class="btn btn-black">Add to Cart</a>
-                        <a href="" class="btn btn-outline-black">Buy</a>
+            <div class="row">
+                <div class="col-md-4 col-12 mb-md-0 mb-sm-4 mb-4">
+                    <div class="image-product-detail">
+                        <img src="./images/4.webp" alt="">
                     </div>
-                    <div class="description-product-detail">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus at ducimus aliquid ipsa
-                            reiciendis error minus velit perferendis in odit praesentium est blanditiis asperiores
-                            accusamus ad, possimus similique, libero nihil aut, officiis iusto enim! Doloribus
-                            distinctio officiis voluptatum nam eos.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vel facilis sit sequi
-                            ipsum atque laborum accusamus veniam. Molestiae, cum.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis odio eveniet hic doloremque
-                            temporibus. Doloremque magnam ipsa laborum rem veritatis! Sequi eveniet voluptatum
-                            cupiditate asperiores voluptates doloremque esse consectetur sunt voluptatem, a quidem et
-                            vero ducimus! Cum laudantium repudiandae debitis expedita atque impedit soluta vero dolores
-                            adipisci dolorem voluptatem dolor quibusdam, asperiores officia accusantium, porro beatae
-                            veritatis. Cupiditate officiis minus exercitationem nesciunt assumenda asperiores modi fuga.
-                            Labore rerum corrupti quo, id mollitia impedit hic libero sit, dolor similique pariatur
-                            excepturi dolorum? Veritatis quidem odio eum sit eaque alias magni repudiandae? Sint ut
-                            facere architecto libero quis nisi perspiciatis soluta consectetur.</p>
+                </div>
+                <div class="col-md-8 col-12">
+                    <div>
+                        <h3 class="name-product-detail">Samsung TV 43" UHD 4K</h3>
+                        <p class="price-product-detail">Rp. 5.200.000</p>
+                        <div class="row mb-4 g-1">
+                            <div class="col-lg-3 col-md-6">
+                                <a href="" class="btn btn-black d-block">Buy</a>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <a href="" class="btn btn-outline-black d-block">Add to Cart</a>
+                            </div>
+                        </div>
+                        <hr class="line line-full">
+                        <div class="description-product-detail">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus at ducimus aliquid
+                                ipsa
+                                reiciendis error minus velit perferendis in odit praesentium est blanditiis asperiores
+                                accusamus ad, possimus similique, libero nihil aut, officiis iusto enim! Doloribus
+                                distinctio officiis voluptatum nam eos.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vel facilis sit
+                                sequi
+                                ipsum atque laborum accusamus veniam. Molestiae, cum.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis odio eveniet hic
+                                doloremque
+                                temporibus. Doloremque magnam ipsa laborum rem veritatis! Sequi eveniet voluptatum
+                                cupiditate asperiores voluptates doloremque esse consectetur sunt voluptatem, a quidem
+                                et
+                                vero ducimus! Cum laudantium repudiandae debitis expedita atque impedit soluta vero
+                                dolores
+                                adipisci dolorem voluptatem dolor quibusdam, asperiores officia accusantium, porro
+                                beatae
+                                veritatis. Cupiditate officiis minus exercitationem nesciunt assumenda asperiores modi
+                                fuga.
+                                Labore rerum corrupti quo, id mollitia impedit hic libero sit, dolor similique pariatur
+                                excepturi dolorum? Veritatis quidem odio eum sit eaque alias magni repudiandae? Sint ut
+                                facere architecto libero quis nisi perspiciatis soluta consectetur.</p>
+                        </div>
                     </div>
                 </div>
             </div>
