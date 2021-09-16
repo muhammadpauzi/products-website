@@ -210,8 +210,12 @@ p {
   text-align: left !important;
 }
 
+.text-white {
+  color: #FFF !important;
+}
+
 .text-gray {
-  color: #484848;
+  color: #484848 !important;
 }
 
 .card {

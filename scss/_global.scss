@@ -207,8 +207,12 @@ p{
     text-align: left !important;
 }
 
+.text-white{
+    color: $whiteColor !important;
+}
+
 .text-gray{
-    color: $grayColor;
+    color: $grayColor !important;
 }
 
 // CARD
