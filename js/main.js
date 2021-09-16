@@ -1,6 +1,7 @@
 const navbar = document.querySelector('.navbar');
 const menu = navbar.querySelector('.ham-menu');
 const navbarList = navbar.querySelector('.navbar-list');
+const backdrop = document.querySelector('.backdrop');
 
 function showStickyNavbar() {
     if (this.scrollY > 0) {
@@ -15,6 +16,6 @@ showStickyNavbar();
 window.addEventListener('scroll', showStickyNavbar)
 
 menu.addEventListener('click', function () {
-    // this.firstElementChild.src = navbarList.classList.toggle('active') ? "./icons/x.svg" : "./icons/menu.svg";
-    navbarList.classList.toggle('active');
+    backdrop.classList.toggle('show');
+    navbarList.classList.toggle('show');
 });

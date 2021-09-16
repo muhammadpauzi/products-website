@@ -7,7 +7,6 @@
 }
 
 body {
-  margin-top: 2rem;
   min-height: 100vh;
   background-color: #FFF;
   color: #000;
@@ -265,6 +264,7 @@ p {
 .navbar {
   width: 100%;
   padding: 1.1rem 0;
+  z-index: 999;
   background-color: #FFF;
   position: fixed;
   top: 0;
@@ -329,6 +329,24 @@ p {
   height: 3px;
   border-radius: 10px;
   background-color: #5444DA;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.backdrop.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .hero {
@@ -414,10 +432,12 @@ p {
 
 @media screen and (max-width: 768px) {
   .navbar .navbar-list {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     position: absolute;
-    top: 4rem;
+    top: 6rem;
     left: 0;
+    right: 0;
     background-color: #FFF;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -431,6 +451,9 @@ p {
     border-bottom: 1px solid rgba(84, 68, 218, 0.1);
     -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
   }
   .navbar .navbar-list li {
     width: 100%;
@@ -445,7 +468,8 @@ p {
   .navbar .navbar-list .navbar-link.btn {
     padding: .9rem 1rem;
   }
-  .navbar .navbar-list.active {
+  .navbar .navbar-list.show {
+    opacity: 1;
     visibility: visible;
   }
   .navbar .ham-menu {
