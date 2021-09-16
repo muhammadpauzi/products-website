@@ -169,16 +169,17 @@ p{
 
 // HEADINGS
 
-.title, .title-md{
+.title-lg, .title-md{
     font-family: $fontFamilySansSerif;
     margin-bottom: 1rem;
     color: $primaryColor;
 }
 
-.title{
+.title-lg{
     font-size: 3rem;
     font-weight: $fontWeightExtraBold;
 }
+
 
 .title-md{
     font-weight: $fontWeightBolder;
@@ -235,9 +236,9 @@ p{
             color: $primaryColor !important;
             margin-bottom: .6rem;
             font-family: $fontFamilySansSerif;
-            transition: color .3s;
 
             &:hover{
+                text-decoration: underline;
             }
         }
         
@@ -247,5 +248,11 @@ p{
             font-weight: $fontWeightBolder;
             margin-bottom: 1rem;
         }
+    }
+}
+
+@media screen and (max-width: $medium){
+    .link-primary{
+        font-size: .9rem;
     }
 }

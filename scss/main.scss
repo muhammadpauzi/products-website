@@ -73,13 +73,11 @@
 }
 
 .products{
-    padding: 4rem 0 5rem 0;
+    padding: 7rem 0 8rem 0;
 }
 
-.search-group{
-    margin-bottom: 2rem;
-    display: flex;
-    gap: .5rem;
+.popular-products{
+    padding: 3rem 0 8rem 0;
 }
 
 .footer{
@@ -94,7 +92,7 @@
 }
 
 .product-detail{
-    padding: 2rem 0 9rem 0;
+    padding: 5rem 0 5rem 0;
     min-height: 100vh;
 
     .image-product-detail {
@@ -187,6 +185,12 @@
 
         .ham-menu{
             display: flex;
+        }
+    }
+
+    .footer{
+        p{
+            font-size: .9rem;
         }
     }
 }
