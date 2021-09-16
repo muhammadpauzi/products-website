@@ -178,7 +178,7 @@ p {
 }
 
 .title, .title-md {
-  font-family: "Poppins", serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-bottom: 1rem;
 }
 
@@ -310,7 +310,7 @@ p {
 }
 
 .navbar .logo {
-  font-family: "Poppins", serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #FFF !important;
   font-weight: 800;
   font-size: 1.5em;
@@ -413,7 +413,7 @@ p {
   font-weight: 700;
   font-size: 1.7rem;
   color: #5444DA;
-  font-family: "Poppins", serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 24px;
 }
 
