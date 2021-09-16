@@ -78,7 +78,7 @@
 
 .hero{
     background-color: $primaryColor;
-    padding: 7rem 0;
+    padding: 9rem 0 6rem 0;
     
     .title{
         color: $whiteColor !important;
@@ -90,11 +90,11 @@
 }
 
 .products{
-    padding: 7rem 0 8rem 0;
+    padding: 9rem 0 8rem 0;
 }
 
 .popular-products{
-    padding: 3rem 0 8rem 0;
+    padding: 4rem 0 8rem 0 !important;
 }
 
 .footer{
@@ -109,7 +109,7 @@
 }
 
 .product-detail{
-    padding: 5rem 0 5rem 0;
+    padding: 8rem 0 5rem 0;
     min-height: 100vh;
 
     .image-product-detail {
@@ -193,7 +193,7 @@
                     padding: .9rem 1rem;
                 }
             }
-            
+
             &.show{
                 opacity: 1;
                 visibility: visible;
