@@ -69,11 +69,18 @@ p{
     width: 100%;
     padding: .900rem 1em;
     font-weight: $fontWeightBold;
-    font-size: 1rem;
+    font-size: .9rem;
     outline: none;
     border: 1px solid $grayColor3;
     background-color: #FAFAFA;
     border-radius: 3px;
+    color: $textColor;
+    transition-property: border-color;
+    transition-duration: .3s;
+
+    &:focus{
+        border-color: $primaryColor;
+    }
 }
 
 .input-group{
@@ -109,6 +116,11 @@ p{
     transition-timing-function: ease-out;
 }
 
+.btn-sm{
+    font-size: .8rem;
+    padding: .9rem 1rem;
+}
+
 .btn-primary{
     background-color: $primaryColor;
     color: $whiteColor !important;
@@ -116,6 +128,7 @@ p{
 
     &:hover{
         background-color: darken($primaryColor, 4);
+        border-color: darken($primaryColor, 4);
         box-shadow: 0 2px 4px rgba($primaryColor, .5);
     }
 }
@@ -131,13 +144,37 @@ p{
     }
 }
 
+.btn-danger{
+    background-color: $dangerColor;
+    color: $whiteColor !important;
+    border-color: $dangerColor;
+
+    &:hover{
+        background-color: darken($dangerColor, 4);
+        border-color: darken($dangerColor, 4);
+        box-shadow: 0 2px 4px rgba($dangerColor, .5);
+    }
+}
+
+.btn-outline-danger{
+    border-color: $dangerColor;
+    background-color: transparent;
+    color: $dangerColor !important;
+
+    &:hover{
+        background-color: rgba($dangerColor, .2);
+        box-shadow: 0 2px 4px rgba($dangerColor, .5);
+    }
+}
+
 .btn-white{
     background-color: $whiteColor;
     color: $primaryColor !important;
     border-color: $whiteColor;
-
+    
     &:hover{
         background-color: darken($whiteColor, 4);
+        border-color: darken($whiteColor, 4);
         box-shadow: 0 2px 4px rgba($whiteColor, .5);
     }
 }
@@ -146,7 +183,7 @@ p{
     border-color: $whiteColor;
     background-color: transparent;
     color: $whiteColor !important;
-
+    
     &:hover{
         background-color: rgba($whiteColor, .2);
         box-shadow: 0 2px 4px rgba($whiteColor, .5);
@@ -169,8 +206,7 @@ p{
 
 // HEADINGS
 
-.title-lg, .title-md{
-    font-family: $fontFamilySansSerif;
+.title-lg, .title-md, .title-sm{
     margin-bottom: 1rem;
     color: $primaryColor;
 }
@@ -180,10 +216,14 @@ p{
     font-weight: $fontWeightExtraBold;
 }
 
-
 .title-md{
-    font-weight: $fontWeightBolder;
     font-size: 2rem;
+    font-weight: $fontWeightBolder;
+}
+
+.title-sm{
+    font-size: 1.5rem;
+    font-weight: $fontWeightBolder;
 }
 
 @media (max-width: $small){
@@ -193,6 +233,10 @@ p{
 
     .title-md{
         font-size: 1.5rem;
+    }
+
+    .title-sm{
+        font-size: 1rem;
     }
 }
 
@@ -239,7 +283,6 @@ p{
             font-weight: $fontWeightBolder;
             color: $primaryColor !important;
             margin-bottom: .2rem;
-            font-family: $fontFamilySansSerif;
 
             &:hover{
                 text-decoration: underline;
@@ -252,6 +295,17 @@ p{
             font-weight: $fontWeightBolder;
             margin-bottom: 1rem;
         }
+    }
+}
+
+// LIST
+.list-group{
+    .list-item {
+        background-color: darken($whiteColor, 1);
+        border: 1px solid darken($whiteColor, 5);
+        border-radius: 4px;
+        padding: 1rem;
+        margin-bottom: .5rem;
     }
 }
 

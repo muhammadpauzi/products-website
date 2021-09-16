@@ -65,11 +65,20 @@ p {
   width: 100%;
   padding: .900rem 1em;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: .9rem;
   outline: none;
   border: 1px solid #DBDBDB;
   background-color: #FAFAFA;
   border-radius: 3px;
+  color: #000;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.input:focus {
+  border-color: #5444DA;
 }
 
 .input-group {
@@ -115,6 +124,11 @@ p {
           transition-timing-function: ease-out;
 }
 
+.btn-sm {
+  font-size: .8rem;
+  padding: .9rem 1rem;
+}
+
 .btn-primary {
   background-color: #5444DA;
   color: #FFF !important;
@@ -123,6 +137,7 @@ p {
 
 .btn-primary:hover {
   background-color: #4433d7;
+  border-color: #4433d7;
   -webkit-box-shadow: 0 2px 4px rgba(84, 68, 218, 0.5);
           box-shadow: 0 2px 4px rgba(84, 68, 218, 0.5);
 }
@@ -139,6 +154,31 @@ p {
           box-shadow: 0 2px 4px rgba(84, 68, 218, 0.5);
 }
 
+.btn-danger {
+  background-color: #ff2f2f;
+  color: #FFF !important;
+  border-color: #ff2f2f;
+}
+
+.btn-danger:hover {
+  background-color: #ff1b1b;
+  border-color: #ff1b1b;
+  -webkit-box-shadow: 0 2px 4px rgba(255, 47, 47, 0.5);
+          box-shadow: 0 2px 4px rgba(255, 47, 47, 0.5);
+}
+
+.btn-outline-danger {
+  border-color: #ff2f2f;
+  background-color: transparent;
+  color: #ff2f2f !important;
+}
+
+.btn-outline-danger:hover {
+  background-color: rgba(255, 47, 47, 0.2);
+  -webkit-box-shadow: 0 2px 4px rgba(255, 47, 47, 0.5);
+          box-shadow: 0 2px 4px rgba(255, 47, 47, 0.5);
+}
+
 .btn-white {
   background-color: #FFF;
   color: #5444DA !important;
@@ -147,6 +187,7 @@ p {
 
 .btn-white:hover {
   background-color: whitesmoke;
+  border-color: whitesmoke;
   -webkit-box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
           box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
 }
@@ -176,8 +217,7 @@ p {
   text-decoration: underline;
 }
 
-.title-lg, .title-md {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.title-lg, .title-md, .title-sm {
   margin-bottom: 1rem;
   color: #5444DA;
 }
@@ -188,8 +228,13 @@ p {
 }
 
 .title-md {
-  font-weight: 700;
   font-size: 2rem;
+  font-weight: 700;
+}
+
+.title-sm {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 @media (max-width: 400px) {
@@ -198,6 +243,9 @@ p {
   }
   .title-md {
     font-size: 1.5rem;
+  }
+  .title-sm {
+    font-size: 1rem;
   }
 }
 
@@ -241,7 +289,6 @@ p {
   font-weight: 700;
   color: #5444DA !important;
   margin-bottom: .2rem;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .card .card-content .card-title a:hover {
@@ -253,6 +300,14 @@ p {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.list-group .list-item {
+  background-color: #fcfcfc;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: .5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -288,7 +343,6 @@ p {
 }
 
 .navbar .logo {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #5444DA !important;
   font-weight: 800;
   font-size: 1.5em;
@@ -363,10 +417,6 @@ p {
   padding: 9rem 0 6rem 0;
 }
 
-.hero .title {
-  color: #FFF !important;
-}
-
 .hero p {
   color: rgba(255, 255, 255, 0.8) !important;
 }
@@ -405,7 +455,6 @@ p {
   font-weight: 700;
   font-size: 1.7rem;
   color: #5444DA;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 24px;
 }
 
@@ -428,7 +477,7 @@ p {
 }
 
 .login {
-  padding: 1rem 0 2rem 0;
+  padding: 3rem 0 2rem 0;
   min-height: 100vh;
 }
 
@@ -437,6 +486,34 @@ p {
   border-bottom: 1px solid #DBDBDB;
   padding: 2rem 0;
   margin: 2rem auto;
+}
+
+.admin {
+  padding: 8rem 0 5rem 0;
+  min-height: 100vh;
+}
+
+.admin .sidebar-admin {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: #fcfcfc;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.admin .sidebar-admin small {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: #000;
+}
+
+.admin .sidebar-admin .btn {
+  margin-bottom: .4rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
