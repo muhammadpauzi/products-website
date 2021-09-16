@@ -6,6 +6,7 @@
 }
 
 body{
+    margin-top: 5rem;
     min-height: 100vh;
     background-color: $backgroundColor;
     color: $textColor;
@@ -30,6 +31,10 @@ span{
 
 img{
     display: block;
+}
+
+p{
+    font-weight: $fontWeightMedium;
 }
 
 // UTILITIES
@@ -78,7 +83,7 @@ img{
     label{
         margin-bottom: .5rem;
         display: block;
-        font-weight: $fontWeightMedium;
+        font-weight: $fontWeightBold;
     }
 }
 
@@ -92,34 +97,59 @@ img{
     text-transform: uppercase;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
-    font-weight: $fontWeightBold;
+    font-weight: $fontWeightBolder;
     font-size: .900em;
     color: $whiteColor;
     outline: none;
     appearance: none;
     border: none;
     border-radius: 3px;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
 }
 
-.btn-black{
-    background-color: $blackColor;
+.btn-primary{
+    background-color: $primaryColor;
     color: $whiteColor !important;
-    border-color: $blackColor;
-    transition: background-color .3s;
+    border-color: $primaryColor;
 
     &:hover{
-        background-color: darken($blackColor, 4);
+        background-color: darken($primaryColor, 4);
+        box-shadow: 0 2px 4px rgba($primaryColor, .5);
     }
 }
 
-.btn-outline-black{
-    border-color: $blackColor;
+.btn-outline-primary{
+    border-color: $primaryColor;
     background-color: transparent;
-    color: $blackColor !important;
-    transition: background-color .3s;
+    color: $primaryColor !important;
 
     &:hover{
-        background-color: rgba($blackColor, .05);
+        background-color: rgba($primaryColor, .2);
+        box-shadow: 0 2px 4px rgba($primaryColor, .5);
+    }
+}
+
+.btn-white{
+    background-color: $whiteColor;
+    color: $primaryColor !important;
+    border-color: $whiteColor;
+
+    &:hover{
+        background-color: darken($whiteColor, 4);
+        box-shadow: 0 2px 4px rgba($whiteColor, .5);
+    }
+}
+
+.btn-outline-white{
+    border-color: $whiteColor;
+    background-color: transparent;
+    color: $whiteColor !important;
+
+    &:hover{
+        background-color: rgba($whiteColor, .2);
+        box-shadow: 0 2px 4px rgba($whiteColor, .5);
     }
 }
 
@@ -128,8 +158,9 @@ img{
 }
 
 // LINKS
-.link-black{
-    color: $blackColor;
+.link-primary{
+    color: $primaryColor !important;
+    font-weight: $fontWeightBold;
 
     &:hover{
         text-decoration: underline;
@@ -141,14 +172,16 @@ img{
 .title, .title-md{
     font-family: $fontFamilySerif;
     margin-bottom: 1rem;
-    font-weight: $fontWeightBolder;
 }
 
 .title{
+    color: $primaryColor;
     font-size: 3rem;
+    font-weight: $fontWeightExtraBold;
 }
 
 .title-md{
+    font-weight: $fontWeightBolder;
     font-size: 2rem;
 }
 
@@ -167,6 +200,10 @@ img{
 
 .text-center{
     text-align: center !important;
+}
+
+.text-left{
+    text-align: left !important;
 }
 
 .text-gray{
@@ -192,18 +229,22 @@ img{
     .card-content{
         padding: 1.4rem .7rem .2rem .7rem;
 
-        .card-title{
+        .card-title a{
             font-size: 1.1rem;
-            color: $blackColor;
             font-weight: $fontWeightBolder;
+            color: $primaryColor !important;
             margin-bottom: .6rem;
             font-family: $fontFamilySansSerif;
+            transition: color .3s;
+
+            &:hover{
+            }
         }
         
         .card-price{
-            color: $grayColor;
+            color: $blackColor;
             font-size: 1rem;
-            font-weight: $fontWeightBold;
+            font-weight: $fontWeightBolder;
             margin-bottom: 1rem;
         }
     }
