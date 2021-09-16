@@ -7,7 +7,7 @@
 }
 
 body {
-  margin-top: 5rem;
+  margin-top: 2rem;
   min-height: 100vh;
   background-color: #FFF;
   color: #000;
@@ -180,10 +180,10 @@ p {
 .title, .title-md {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-bottom: 1rem;
+  color: #5444DA;
 }
 
 .title {
-  color: #5444DA;
   font-size: 3rem;
   font-weight: 800;
 }
@@ -253,65 +253,23 @@ p {
 .navbar {
   width: 100%;
   padding: 1.1rem 0;
-  background-color: #5444DA;
+  background-color: #FFF;
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, box-shadow;
-  transition-property: background-color, color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  -webkit-transition-duration: box-shadow .3s;
+          transition-duration: box-shadow .3s;
   z-index: 9999;
-  border-bottom: 1px solid rgba(84, 68, 218, 0.2);
 }
 
 .navbar.sticky {
   -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  background-color: #FFF;
-}
-
-.navbar.sticky .logo {
-  color: #5444DA !important;
-}
-
-.navbar.sticky .navbar-list .navbar-link {
-  color: #5444DA;
-}
-
-.navbar.sticky .navbar-list .navbar-link:hover {
-  color: #8e84e7;
-}
-
-.navbar.sticky .navbar-list .btn-white {
-  background-color: #5444DA;
-  color: #FFF !important;
-  border-color: #5444DA;
-}
-
-.navbar.sticky .navbar-list .btn-white:hover {
-  background-color: #4433d7;
-  -webkit-box-shadow: 0 2px 4px rgba(84, 68, 218, 0.5);
-          box-shadow: 0 2px 4px rgba(84, 68, 218, 0.5);
-}
-
-.navbar.sticky .navbar-list .btn-outline-white {
-  border-color: #5444DA;
-  background-color: transparent;
-  color: #5444DA !important;
-}
-
-.navbar.sticky .navbar-list .btn-outline-white:hover {
-  background-color: rgba(84, 68, 218, 0.2);
-  -webkit-box-shadow: 0 2px 4px rgba(84, 68, 218, 0.5);
-          box-shadow: 0 2px 4px rgba(84, 68, 218, 0.5);
 }
 
 .navbar .logo {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #FFF !important;
+  color: #5444DA !important;
   font-weight: 800;
   font-size: 1.5em;
 }
@@ -320,7 +278,6 @@ p {
   display: inline-block;
   padding: .500rem .900rem;
   font-weight: 600;
-  color: #FFF;
   font-size: 1rem;
   -webkit-transition-property: background-color, color, -webkit-box-shadow;
   transition-property: background-color, color, -webkit-box-shadow;
@@ -330,10 +287,11 @@ p {
           transition-duration: .3s;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
+  color: #5444DA;
 }
 
 .navbar .navbar-list .navbar-link:hover {
-  color: #e6e6e6;
+  color: #8e84e7;
 }
 
 .navbar .ham-menu {
@@ -364,7 +322,7 @@ p {
 
 .hero {
   background-color: #5444DA;
-  padding: 6rem 0;
+  padding: 7rem 0;
 }
 
 .hero .title {
@@ -394,7 +352,7 @@ p {
 }
 
 .footer p {
-  font-weight: 500;
+  font-weight: 600;
   color: #484848;
 }
 

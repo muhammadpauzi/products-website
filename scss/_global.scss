@@ -6,7 +6,7 @@
 }
 
 body{
-    margin-top: 5rem;
+    margin-top: 2rem;
     min-height: 100vh;
     background-color: $backgroundColor;
     color: $textColor;
@@ -172,10 +172,10 @@ p{
 .title, .title-md{
     font-family: $fontFamilySansSerif;
     margin-bottom: 1rem;
+    color: $primaryColor;
 }
 
 .title{
-    color: $primaryColor;
     font-size: 3rem;
     font-weight: $fontWeightExtraBold;
 }

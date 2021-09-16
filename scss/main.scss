@@ -4,59 +4,20 @@
 .navbar{
     width: 100%;
     padding: 1.1rem 0;
-    background-color: $primaryColor;
+    background-color: $whiteColor;
     position: fixed;
     top: 0;
     left: 0;
-    transition-property: background-color, color, box-shadow;
-    transition-duration: .3s;
+    transition-duration: box-shadow .3s;
     z-index: 9999;
-    border-bottom: 1px solid rgba($primaryColor, .2);
     
     &.sticky{
         box-shadow: 0 3px 8px rgba($blackColor, .1);
-        background-color: $whiteColor;
-        
-        .logo{
-            color: $primaryColor !important;
-        }
-
-        .navbar-list{
-            .navbar-link{
-                color: $primaryColor;
-        
-                &:hover{
-                    color: lighten($primaryColor, 15);
-                }
-            }
-
-            .btn-white{
-                background-color: $primaryColor;
-                color: $whiteColor !important;
-                border-color: $primaryColor;
-
-                &:hover{
-                    background-color: darken($primaryColor, 4);
-                    box-shadow: 0 2px 4px rgba($primaryColor, .5);
-                }
-            }
-
-            .btn-outline-white{
-                border-color: $primaryColor;
-                background-color: transparent;
-                color: $primaryColor !important;
-
-                &:hover{
-                    background-color: rgba($primaryColor, .2);
-                    box-shadow: 0 2px 4px rgba($primaryColor, .5);
-                }
-            }
-        }
     }
 
     .logo{
         font-family: $fontFamilySansSerif;
-        color: $whiteColor !important;
+        color: $primaryColor !important;
         font-weight: $fontWeightExtraBold;
         font-size: 1.5em;
     }
@@ -66,14 +27,14 @@
             display: inline-block;
             padding: .500rem .900rem;
             font-weight: $fontWeightBold;
-            color: $whiteColor;
             font-size: 1rem;
             transition-property: background-color, color, box-shadow;
             transition-duration: .3s;
             transition-timing-function: ease-out;
-            
+            color: $primaryColor;
+        
             &:hover{
-                color: darken($whiteColor, 10);
+                color: lighten($primaryColor, 15);
             }
         }
     }
@@ -100,7 +61,7 @@
 
 .hero{
     background-color: $primaryColor;
-    padding: 6rem 0;
+    padding: 7rem 0;
     
     .title{
         color: $whiteColor !important;
@@ -127,7 +88,7 @@
     border-top: 1px solid $grayColor3;
 
     p{
-        font-weight: $fontWeightMedium;
+        font-weight: $fontWeightBold;
         color: $grayColor;
     }
 }
