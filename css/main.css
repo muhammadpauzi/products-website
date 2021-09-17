@@ -335,6 +335,10 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .btn {
+    font-size: .8rem;
+    padding: .7rem 1.2rem;
+  }
   .link-primary {
     font-size: .9rem;
   }
