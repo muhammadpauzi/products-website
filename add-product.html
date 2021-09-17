@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap 5 Grid CSS -->
     <link rel="stylesheet" href="./vendors/boostrap5/css/bootstrap-grid.min.css">
+    <!-- Box Icons Local -->
+    <!-- <link rel="stylesheet" href="./vendors/boxicons-2.0.9/css/boxicons.min.css"> -->
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- Google Font -->
@@ -38,10 +42,12 @@
                     <a href="product.html" class="navbar-link me-md-2 me-sm-2 me-0">Product</a>
                 </li>
                 <li>
-                    <a href="login.html" class="navbar-link btn btn-primary me-md-1 me-sm-1 me-0">Login</a>
+                    <a href="login.html" class="navbar-link btn btn-primary me-md-1 me-sm-1 me-0"><i
+                            class="bx bx-log-in-circle"></i> Login</a>
                 </li>
                 <li>
-                    <a href="register.html" class="navbar-link btn btn-outline-primary">Register</a>
+                    <a href="register.html" class="navbar-link btn btn-outline-primary"><i class="bx bx-user-plus"></i>
+                        Register</a>
                 </li>
             </ul>
 
@@ -64,23 +70,26 @@
                         <small>Products</small>
                         <ul>
                             <li>
-                                <a href="add-product.html" class="btn btn-primary">Add Product</a>
+                                <a href="add-product.html" class="btn btn-outline-primary"><i
+                                        class="bx bx-plus-circle"></i> Add Product</a>
                             </li>
                             <li>
-                                <a href="admin.html" class="btn btn-outline-primary">List Products</a>
+                                <a href="admin.html" class="btn btn-primary"><i class="bx bx-list-ul"></i> List
+                                    Products</a>
                             </li>
                         </ul>
                         <small>Users</small>
                         <ul>
                             <li>
-                                <a href="add-product.html" class="btn btn-outline-primary">List Users</a>
+                                <a href="admin.html" class="btn btn-outline-primary"><i class="bx bx-list-ul"></i> List
+                                    Users</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-9 ps-4">
                     <div class="text-left">
-                        <h2 class="title-md mb-7">Add Product</h2>
+                        <h2 class="title-md mb-7"><i class="bx bx-plus-circle"></i> Add Product</h2>
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="input-group">
@@ -95,7 +104,7 @@
                                     <label for="image">Image</label>
                                     <input type="file" class="input" id="image">
                                 </div>
-                                <button class="btn btn-primary">Add Product</button>
+                                <button class="btn btn-primary"><i class="bx bx-plus-circle"></i> Add Product</button>
                             </div>
                         </div>
                     </div>
