@@ -126,7 +126,7 @@ p {
 
 .btn-xs {
   font-size: .7rem;
-  padding: .7rem .9rem;
+  padding: .5rem .6rem;
 }
 
 .btn-primary {
@@ -298,11 +298,43 @@ p {
   margin-bottom: .5rem;
 }
 
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #000;
+  border-collapse: collapse;
+  vertical-align: top;
+}
+
+.table td, .table th {
+  padding: 1rem;
+  border-bottom: 1px solid dakren;
+}
+
+.table thead {
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+}
+
+.table th {
+  background-color: #fcfcfc;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.table td {
+  border-bottom: 1px solid #f2f2f2;
+  font-weight: 500;
+  font-size: .8rem;
+}
+
 @media screen and (max-width: 768px) {
-  .btn-xs {
-    font-size: .5rem;
-    padding: .5rem .7rem;
-  }
   .link-primary {
     font-size: .9rem;
   }

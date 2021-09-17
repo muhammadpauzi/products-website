@@ -118,7 +118,7 @@ p{
 
 .btn-xs{
     font-size: .7rem;
-    padding: .7rem .9rem;
+    padding: .5rem .6rem;
 }
 
 .btn-primary{
@@ -294,12 +294,44 @@ p{
     }
 }
 
-@media screen and (max-width: $medium){
-    .btn-xs{
-        font-size: .5rem;
-        padding: .5rem .7rem;
+// TABLE
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: $textColor;
+    border-collapse: collapse;
+    vertical-align: top;
+
+    td, th{
+        padding: 1rem;
+        border-bottom: 1px solid dakren;
     }
-    
+
+    thead{
+        border: 1px solid darken($whiteColor, 5);
+        border-radius: 4px;
+    }
+
+    th{
+        background-color: darken($whiteColor, 1);
+        padding: 1rem;
+        font-weight: $fontWeightBold;
+        font-size: .9rem;
+    }
+
+    td{
+        border-bottom: 1px solid darken($whiteColor, 5);
+        font-weight: $fontWeightMedium;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: $medium){
     .link-primary{
         font-size: .9rem;
     }
