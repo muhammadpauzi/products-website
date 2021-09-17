@@ -335,6 +335,12 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .table th {
+    font-size: .8rem;
+  }
+  .table td {
+    font-size: .7rem;
+  }
   .btn {
     font-size: .8rem;
     padding: .7rem 1.2rem;
