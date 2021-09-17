@@ -124,9 +124,9 @@ p {
           transition-timing-function: ease-out;
 }
 
-.btn-sm {
-  font-size: .8rem;
-  padding: .9rem 1rem;
+.btn-xs {
+  font-size: .7rem;
+  padding: .7rem .9rem;
 }
 
 .btn-primary {
@@ -237,18 +237,6 @@ p {
   font-weight: 700;
 }
 
-@media (max-width: 400px) {
-  .title-lg {
-    font-size: 2.3rem;
-  }
-  .title-md {
-    font-size: 1.5rem;
-  }
-  .title-sm {
-    font-size: 1rem;
-  }
-}
-
 .text-center {
   text-align: center !important;
 }
@@ -311,12 +299,25 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .btn-xs {
+    font-size: .5rem;
+    padding: .5rem .7rem;
+  }
   .link-primary {
     font-size: .9rem;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .title-lg {
+    font-size: 2.3rem;
+  }
+  .title-md {
+    font-size: 1.5rem;
+  }
+  .title-sm {
+    font-size: 1rem;
+  }
   .card .card-content .card-title a {
     font-size: .9rem;
   }
