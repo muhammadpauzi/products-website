@@ -339,6 +339,10 @@ p {
     font-size: .8rem;
     padding: .7rem 1.2rem;
   }
+  .btn-xs {
+    font-size: .6rem;
+    padding: .4rem .5rem;
+  }
   .link-primary {
     font-size: .9rem;
   }
@@ -352,7 +356,7 @@ p {
     font-size: 1.5rem;
   }
   .title-sm {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .card .card-content .card-title a {
     font-size: .9rem;
